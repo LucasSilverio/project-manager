@@ -1,0 +1,15 @@
+{
+    "name": "lucassilverio/myframework",
+    "autoload": {
+        "psr-4": {
+            "Lucassilverio\\Myframework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lucas Silverio",
+            "email": "lucas.silveriosousa@gmail.com"
+        }
+    ],
+    "require": {}
+}

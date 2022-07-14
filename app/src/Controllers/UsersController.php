@@ -3,13 +3,12 @@
 namespace App\Controllers;
 
 use App\Models\Users;
+use Lucassilverio\Framework\CrudController;
 
-class UsersController
+class UsersController extends CrudController
 {
-    public function show($container, $request)
+    protected function getModel(): string
     {
-        $user = new Users($container);
-        $user->create(['name' => 'Lucas']);
-        return $data = $user->get($request->attributes->get(1));
+        return 'users_model';
     }
 }

@@ -3,7 +3,10 @@
     "autoload": {
         "psr-4": {
             "Lucassilverio\\Framework\\": "src/"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "authors": [
         {

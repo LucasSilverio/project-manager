@@ -1,8 +1,8 @@
 {
-    "name": "lucassilverio/myframework",
+    "name": "lucassilverio/framework",
     "autoload": {
         "psr-4": {
-            "Lucassilverio\\Myframework\\": "src/"
+            "Lucassilverio\\Framework\\": "src/"
         }
     },
     "authors": [
@@ -11,5 +11,15 @@
             "email": "lucas.silveriosousa@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "pimple/pimple": "^3.5",
+        "symfony/http-foundation": "^5.4",
+        "zendframework/zend-eventmanager": "^3.2"
+    },
+    "scripts": {
+        "server": "php -S localhost:8080 -t public"
+    },
+    "config": {
+        "process-timeout": 0
+    }
 }
